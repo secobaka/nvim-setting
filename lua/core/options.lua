@@ -1,9 +1,9 @@
 local opt = vim.opt
 
 -- 文字コード
-vim.scriptencoding = 'utf-8'
-opt.encoding = 'utf-8'
-opt.fileencoding = 'utf-8'
+vim.scriptencoding = "utf-8"
+opt.encoding = "utf-8"
+opt.fileencoding = "utf-8"
 
 -- 24bitカラー
 opt.termguicolors = true
@@ -11,7 +11,7 @@ opt.termguicolors = true
 -- 行設定
 opt.number = true
 opt.scrolloff = 8
-opt.signcolumn = 'yes'
+opt.signcolumn = "yes"
 opt.wrap = false
 
 -- 検索
@@ -19,16 +19,16 @@ opt.ignorecase = true
 opt.smartcase = true
 
 -- 置換
-opt.inccommand = 'split'
+opt.inccommand = "split"
 
 -- クリップボード
-opt.clipboard = 'unnamedplus'
+opt.clipboard = "unnamedplus"
 
 -- ヘルプの言語
-opt.helplang = 'ja'
+opt.helplang = "ja"
 
 -- マウス操作有効化
-opt.mouse = 'a'
+opt.mouse = "a"
 
 -- タブ, インデント
 opt.tabstop = 2
