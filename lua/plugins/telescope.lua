@@ -14,7 +14,7 @@ return {
 			{ "<leader>ff", ":Telescope find_files<CR>" },
 			{ "<leader>fw", ":Telescope live_grep<CR>" },
 			{ "<leader>fb", ":Telescope buffers<CR>" },
-			{ "<leader>fr", ":Telescope file_browser path=%:p:h select_buffer=true<CR>" },
+			{ "<leader>fd", ":Telescope file_browser path=%:p:h select_buffer=true<CR>" },
 		},
 		opts = function()
 			require("telescope").setup({
@@ -38,7 +38,6 @@ return {
 						case_mode = "smart_case",
 					},
 					file_browser = {
-						theme = "ivy",
 						hijack_netrw = true,
 					},
 				},

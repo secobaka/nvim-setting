@@ -39,3 +39,6 @@ opt.smartindent = true
 
 -- ヒストリの上限
 opt.history = 512
+
+-- ステータスライン
+opt.laststatus = 3
