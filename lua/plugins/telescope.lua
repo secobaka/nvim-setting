@@ -38,7 +38,6 @@ return {
 			end
 			require("telescope").setup({
 				defaults = {
-					initial_mode = "normal",
 					vimgrep_arguments = {
 						"rg",
 						"--color=never",
