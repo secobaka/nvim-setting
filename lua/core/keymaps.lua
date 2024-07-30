@@ -1,3 +1,6 @@
+-- insert mode
+vim.keymap.set("i", "jj", "<ESC>")
+
 -- 一文字削除はレジスタに入れない
 vim.keymap.set("n", "x", '"_x')
 vim.keymap.set("n", "X", '"_X')
