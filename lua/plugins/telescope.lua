@@ -38,6 +38,13 @@ return {
 			end
 			require("telescope").setup({
 				defaults = {
+					file_ignore_patterns = {
+						"^.git/",
+						"^.cache/",
+						"^.aws-sam/",
+						"^vendor/",
+						"^node_modules/",
+					},
 					vimgrep_arguments = {
 						"rg",
 						"--color=never",
@@ -47,6 +54,7 @@ return {
 						"--column",
 						"--smart-case",
 						"-uu",
+						"--hidden",
 					},
 					sorting_strategy = "ascending",
 					layout_config = {
@@ -87,6 +95,7 @@ return {
 					file_browser = {
 						hijack_netrw = true,
 						hidden = { file_browser = true, folder_browser = true },
+						respect_gitignore = false,
 					},
 				},
 			})
