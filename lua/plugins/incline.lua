@@ -22,13 +22,13 @@ return {
 					local ft_icon, ft_color = devicons.get_icon_color(filename)
 					local modified = vim.bo[props.buf].modified
 					return {
-						modified and { "  ", guifg = palette.red, guibg = palette.bg0 } or "",
+						modified and { "  ", guifg = palette.orange, guibg = palette.bg0 } or "",
 						ft_icon and { " ", ft_icon, " ", guibg = ft_color, guifg = helpers.contrast_color(ft_color) }
 							or "",
 						" ",
 						{ filename, gui = "bold" },
 						" ",
-						guibg = "#44406e",
+						guibg = palette.bg_blue,
 					}
 				end,
 			})
