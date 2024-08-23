@@ -6,6 +6,7 @@ return {
 			open_mapping = [[<leader>t]],
 			direction = "float",
 			insert_mappings = false,
+			terminal_mappings = false,
 		},
 	},
 }
