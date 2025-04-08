@@ -5,8 +5,8 @@ return {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		config = function()
 			local alpha = require("alpha")
-			local theta = require("alpha.themes.theta")
-			theta.header.val = {
+			local theme = require("alpha.themes.dashboard")
+			theme.section.header.val = {
 				[[                                                                                                              ]],
 				[[                                                                                                              ]],
 				[[                                                                                                              ]],
@@ -42,7 +42,8 @@ return {
 				[[                                                                                                              ]],
 				[[                                                                                                              ]],
 			}
-			alpha.setup(theta.config)
+			theme.section.buttons.val = {}
+			alpha.setup(theme.config)
 		end,
 	},
 }

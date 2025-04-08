@@ -39,11 +39,11 @@ return {
 			require("telescope").setup({
 				defaults = {
 					file_ignore_patterns = {
-						"^.git/",
-						"^.cache/",
-						"^.aws-sam/",
-						"^vendor/",
-						"^node_modules/",
+						".git/",
+						".cache/",
+						".aws-sam/",
+						"vendor/",
+						"node_modules/",
 					},
 					vimgrep_arguments = {
 						"rg",
