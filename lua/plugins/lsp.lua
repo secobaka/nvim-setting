@@ -17,8 +17,6 @@ return {
 		config = function()
 			require("mason").setup()
 
-			require("mason-lspconfig").setup()
-
 			require("mason-lspconfig").setup({
 				handlers = {
 					function(server_name)
@@ -111,6 +109,7 @@ return {
 					["<C-Space>"] = cmp.mapping.complete({}),
 				}),
 				sources = {
+					{ name = "copilot" },
 					{ name = "nvim_lsp" },
 					{ name = "path" },
 				},
