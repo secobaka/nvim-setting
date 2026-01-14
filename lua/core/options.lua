@@ -10,7 +10,6 @@ opt.termguicolors = true
 
 -- 行設定
 opt.number = true
-opt.relativenumber = true
 opt.scrolloff = 8
 opt.signcolumn = "yes"
 opt.wrap = false
