@@ -1,20 +1,12 @@
 return {
 	{
 		"nvim-telescope/telescope.nvim",
-		tag = "0.1.5",
+		version = "*",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
-			--[[ {
-				"nvim-telescope/telescope-fzf-native.nvim",
-				build = "make",
-			},
-			"nvim-telescope/telescope-file-browser.nvim", ]]
 		},
 		keys = {
-			--[[ { "<leader>ff", ":Telescope find_files<CR>" },
-			{ "<leader>fw", ":Telescope live_grep<CR>" }, ]]
 			{ "<leader>fb", ":Telescope buffers<CR>" },
-			--[[ 			{ "<leader>fd", ":Telescope file_browser path=%:p:h select_buffer=true<CR>" }, ]]
 		},
 		opts = function()
 			local actions = require("telescope.actions")
@@ -85,22 +77,7 @@ return {
 						hidden = true,
 					},
 				},
-				--[[ extensions = {
-					fzf = {
-						fuzzy = true,
-						override_generic_sorter = true,
-						override_file_sorter = true,
-						case_mode = "smart_case",
-					},
-					file_browser = {
-						hijack_netrw = true,
-						hidden = { file_browser = true, folder_browser = true },
-						respect_gitignore = false,
-					},
-				}, ]]
 			})
-			--[[ require("telescope").load_extension("fzf")
-			require("telescope").load_extension("file_browser") ]]
 		end,
 	},
 }
