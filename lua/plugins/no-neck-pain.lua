@@ -1,5 +1,5 @@
 return {
-	"shortcuts/no-neck-pain.nvim",
+	--[[ "shortcuts/no-neck-pain.nvim",
 	version = "*",
 	config = function()
 		require("no-neck-pain").setup({
@@ -11,5 +11,5 @@ return {
 			},
 		})
 		vim.keymap.set("n", "<leader>z", "<cmd>NoNeckPain<CR>")
-	end,
+	end, ]]
 }
